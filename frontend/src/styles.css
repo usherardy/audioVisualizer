@@ -1,0 +1,106 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: radial-gradient(circle at top, #1a2340 0, #050814 55%, #020308 100%);
+  color: #f5f7ff;
+}
+
+.app-root {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.card {
+  width: 100%;
+  max-width: 900px;
+  background: rgba(9, 12, 30, 0.9);
+  border-radius: 18px;
+  padding: 24px 24px 28px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(120, 150, 255, 0.35);
+  backdrop-filter: blur(18px);
+}
+
+.card h1 {
+  margin: 0 0 4px;
+  font-size: 1.8rem;
+  letter-spacing: 0.03em;
+}
+
+.subtitle {
+  margin: 0 0 16px;
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
+.footer-note {
+  margin-top: 16px;
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+.visualizer-container {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+
+.file-input-label {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(130, 160, 255, 0.7);
+  background: radial-gradient(circle at 0% 0%, rgba(100, 130, 255, 0.55), rgba(20, 26, 70, 0.95));
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.file-input-label span {
+  z-index: 1;
+}
+
+.file-input-label input[type="file"] {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.audio-player {
+  flex: 1;
+  min-width: 220px;
+  max-width: 100%;
+}
+
+.canvas-wrapper {
+  margin-top: 8px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(90, 120, 220, 0.8);
+  background: radial-gradient(circle at center, #171a35 0, #050814 100%);
+}

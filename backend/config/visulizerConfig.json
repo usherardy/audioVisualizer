@@ -1,0 +1,7 @@
+{
+  "beatSensitivity": 1.4,
+  "historySize": 60,
+  "minBeatGapMs": 150,
+  "particleBurstCount": 50,
+  "particleMaxLife": 1200
+}
